@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>geograsp</name>
+  <version>0.4.0</version>
+  <description>The Melodic GeoGrasp package: a geometry-based method for computing grasping points on 3D point clouds</description>
+
+  <maintainer email="ignacio.paez@ua.es">Ignacio Paez</maintainer>
+
+
+  <license>BSD-2-Clause</license>
+
+  <url type="website">https://github.com/ignpaub/GeoGrasp</url>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>pcl_conversions</build_depend>
+  <build_depend>pcl_ros</build_depend>
+  <build_depend>roscpp</build_depend>
+  <build_depend>sensor_msgs</build_depend>
+  <build_depend>libpcl-all-dev</build_depend>
+  <build_export_depend>pcl_conversions</build_export_depend>
+  <build_export_depend>pcl_ros</build_export_depend>
+  <build_export_depend>roscpp</build_export_depend>
+  <build_export_depend>sensor_msgs</build_export_depend>
+  <exec_depend>pcl_conversions</exec_depend>
+  <exec_depend>pcl_ros</exec_depend>
+  <exec_depend>roscpp</exec_depend>
+  <exec_depend>sensor_msgs</exec_depend>
+  <exec_depend>libpcl-all</exec_depend>
+
+
+  <!-- The export tag contains other, unspecified, tags -->
+  <export>
+    <!-- Other tools can request additional information be placed here -->
+    <depend>pcl_conversions</depend>
+    <depend>pcl_ros</depend>
+    <depend>roscpp</depend>
+    <depend>sensor_msgs</depend>
+  </export>
+</package>
