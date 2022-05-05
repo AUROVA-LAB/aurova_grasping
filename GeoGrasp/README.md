@@ -30,7 +30,7 @@ source devel/setup.bash
 ```
 cd ~/catkin_ws/src/
 source devel/setup.bash
-git clone https://github.com/AUROVA-LAB/aurova_manipulation.git
+git clone https://github.com/AUROVA-LAB/aurova_grasping.git
 cd ~/catkin_ws/
 source devel/setup.bash
 catkin_make
