@@ -1,0 +1,2 @@
+set(robotiq_3f_gripper_articulated_msgs_MESSAGE_FILES "/home/julio/Escritorio/julio/doctorado/primer_anyo/florian/ur5e_/ur5e_3f_ws/src/robotiq/robotiq_3f_gripper_articulated_msgs/msg/Robotiq3FGripperRobotInput.msg;/home/julio/Escritorio/julio/doctorado/primer_anyo/florian/ur5e_/ur5e_3f_ws/src/robotiq/robotiq_3f_gripper_articulated_msgs/msg/Robotiq3FGripperRobotOutput.msg")
+set(robotiq_3f_gripper_articulated_msgs_SERVICE_FILES "")

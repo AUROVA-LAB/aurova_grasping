@@ -1,0 +1,2 @@
+robotiq/robotiq_modbus_tcp
+-DCATKIN_DEVEL_PREFIX=/home/julio/Escritorio/julio/doctorado/primer_anyo/florian/ur5e_/ur5e_3f_ws/devel -DCMAKE_INSTALL_PREFIX=/home/julio/Escritorio/julio/doctorado/primer_anyo/florian/ur5e_/ur5e_3f_ws/install -DCATKIN_WHITELIST_PACKAGES=robotiq_modbus_tcp -G Unix Makefiles

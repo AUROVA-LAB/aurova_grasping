@@ -1,0 +1,8 @@
+prefix=/home/julio/Escritorio/julio/doctorado/primer_anyo/florian/ur5e_/ur5e_3f_ws/devel
+
+Name: robotiq_2f_140_gripper_visualization
+Description: Description of robotiq_2f_140_gripper_visualization
+Version: 1.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

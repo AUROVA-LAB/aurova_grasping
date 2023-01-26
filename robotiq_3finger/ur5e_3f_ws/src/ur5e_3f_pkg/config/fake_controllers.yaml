@@ -1,0 +1,31 @@
+controller_list:
+  - name: fake_ur5e_arm_controller
+    type: $(arg fake_execution_type)
+    joints:
+      - shoulder_pan_joint
+      - shoulder_lift_joint
+      - elbow_joint
+      - wrist_1_joint
+      - wrist_2_joint
+      - wrist_3_joint
+  - name: fake_gripper_controller
+    type: $(arg fake_execution_type)
+    joints:
+      - finger_middle_joint_1
+  - name: fake_gripper_mode_controller
+    type: $(arg fake_execution_type)
+    joints:
+      - palm_finger_1_joint
+initial:  # Define initial robot poses.
+  - group: ur5e_arm
+    pose: home
+  - group: gripper
+    pose: closed
+  - group: gripper
+    pose: opened
+  - group: gripper_mode
+    pose: basic
+  - group: gripper_mode
+    pose: wide
+  - group: gripper_mode
+    pose: pinch

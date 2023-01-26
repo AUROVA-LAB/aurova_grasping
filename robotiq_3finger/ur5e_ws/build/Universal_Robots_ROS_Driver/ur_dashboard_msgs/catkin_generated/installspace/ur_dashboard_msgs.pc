@@ -1,0 +1,8 @@
+prefix=/home/zalmanpc/ur5e_ws/install
+
+Name: ur_dashboard_msgs
+Description: Description of ur_dashboard_msgs
+Version: 2.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: actionlib_msgs message_runtime std_msgs

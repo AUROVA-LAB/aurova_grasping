@@ -1,0 +1,8 @@
+prefix=/home/julio/Escritorio/julio/doctorado/primer_anyo/florian/ur5e_/ur5e_3f_ws/install
+
+Name: robotiq_ethercat
+Description: Description of robotiq_ethercat
+Version: 1.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib -lrobotiq_ethercat
+Requires: soem roscpp

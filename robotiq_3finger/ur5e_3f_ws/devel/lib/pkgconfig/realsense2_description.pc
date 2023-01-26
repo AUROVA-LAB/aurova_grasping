@@ -1,0 +1,8 @@
+prefix=/home/julio/Escritorio/julio/doctorado/primer_anyo/florian/ur5e_/ur5e_3f_ws/devel
+
+Name: realsense2_description
+Description: Description of realsense2_description
+Version: 3.1.7
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

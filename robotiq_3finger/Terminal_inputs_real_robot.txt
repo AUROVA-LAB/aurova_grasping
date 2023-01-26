@@ -1,0 +1,46 @@
+/!\ Arm
+==> cd ur5e_ws/
+catkin_make --only-pkg-with-deps ur_robot_driver
+
+roslaunch ur_robot_driver ur5e_bringup.launch robot_ip:=172.18.34.201 kinematics_config:=/home/zalmanpc/ur5e_ws/src/calib.yaml
+
+--> Execute external control of the real robot in VNC
+
+roslaunch ur5e_moveit_config ur5e_moveit_planning_execution.launch
+
+roslaunch ur5e_moveit_config moveit_rviz.launch rviz_config:=$(rospack find ur5e_moveit_config)/launch/moveit.rviz
+
+/!\ Gripper
+==> cd ur5e_3f_ws/
+
+maybe you have to install soem package before: sudo apt install ros-<DISTRO>-soem
+
+catkin_make --only-pkg-with-deps robotiq_3f_gripper_control
+
+(roscore)
+rosrun robotiq_3f_gripper_control Robotiq3FGripperTcpNode.py 172.18.34.220
+
+*** if you get an error with the robotiq_modbus_tcp package, and rosdep install does not solve the error, you need to compile
+the package alone with catkin_make --only-pkg-with-deps robotiq_modbus_tcp***
+
+rosrun robotiq_3f_gripper_control Robotiq3FGripperMainProgram.py
+(rosrun robotiq_3f_gripper_control Robotiq3FGripperController.py) --> direct control from terminal
+
+/!\ Camera
+==> cd catkin_build_ws/
+. ./venv/bin/activate
+source /opt/ros/melodic/setup.bash 
+
+rosrun point_cloud_processing pt_cloud_script_real.py
+
+==> cd ur5e_3f_ws/
+(catkin_make --only-pkg-with-deps link_tf)
+
+roslaunch realsense2_camera demo_pointcloud.launch
+rosrun link_tf frame_link.py --> connect the two tf trees
+
+/!\ Main program
+==> cd ur5e_3f_ws/
+catkin_make --only-pkg-with-deps ur5_simple_pick_and_place
+
+rosrun ur5_simple_pick_and_place ur5e_control_test
