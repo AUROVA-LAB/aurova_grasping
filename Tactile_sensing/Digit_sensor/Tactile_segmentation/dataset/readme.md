@@ -29,22 +29,22 @@ The following image shows some examples of tactile segmentation where the first 
 This dataset is shared only for non-profit research or educational purposes. If you use this dataset or a part of it, please respect these terms of use and reference the original work in which it was published.
 
 # FILE FORMAT
-The dataset is structured in 16 folders, one per object. In the paper you can find which object is used for each set (D1, D2, and D3) for training, validation and testing. The object's folders are organized with the following structure:
+The dataset is structured in 16 folders, one per object. In the paper you can find which object is used for each subdataset for training, validation and testing. The object's folders are organized with the following structure:
 
-object/
+    object/
 	
-    image_label/
-		imageidx_sensorunit.png --> raw images from the Digit sensor.
-		labelidx_sensorunit.json --> labeled image in json format.
-	
-    voc_format/
-		class_names.txt --> We do not classify the images, but it is necessary to label all the masks with the same class. After that, we do not use this class for anything.
-		JPEGImages/ --> contain the same images as image_label but in jpg format.
-			imageidx_sensorunit.png
-		SegmetationClass/ 
-			labelidx_sensorunit.npy --> contour points saved in npy format.
-		SegmentationClassPNG/
-			labelidx_sensorunit.png --> black and white labeled images. We used this images for the training, validation and testing.
-		SegmentationClassVisualization/
-			labelidx_sensorunit.png --> visualization of the masks in the original images.
-			
+        image_label/
+            imageidx_sensorunit.png --> raw images from the Digit sensor.
+            labelidx_sensorunit.json --> labeled image in json format.
+        
+        voc_format/
+            class_names.txt --> We do not classify the images, but it is necessary to label all the masks with the same class. After that, we do not use this class for anything.
+            JPEGImages/ --> contain the same images as image_label but in jpg format.
+                imageidx_sensorunit.png
+            SegmetationClass/ 
+                labelidx_sensorunit.npy --> contour points saved in npy format.
+            SegmentationClassPNG/
+                labelidx_sensorunit.png --> black and white labeled images. We used this images for the training, validation and testing.
+            SegmentationClassVisualization/
+                labelidx_sensorunit.png --> visualization of the masks in the original images.
+                
