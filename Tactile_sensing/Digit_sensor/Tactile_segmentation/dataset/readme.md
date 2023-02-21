@@ -2,7 +2,7 @@
 
 This dataset contains tactile images obtained with the vision-based tactile sensor known as Digit when grasping 16 different objects from YCB dataset (see first image), which contains different properties related to touch such as weight, friction, deformation, shape, height, width, etc. This dataset can be used to train and evaluate segmentation neural networks applied to tactile sensing. 
 
-![alt text](https://github.com/[Jcastanyo]/[AUROVA-LAB/aurova_grasping]/blob/[main]/tactile_segmentation_dataset.png?raw=true)
+![alt text](https://github.com/AUROVA-LAB/aurova_grasping/tree/main/Tactile_sensing/Digit_sensor/Tactile_segmentation/figures/tactile_segmentation_dataset.png?raw=true)
 
 
 
