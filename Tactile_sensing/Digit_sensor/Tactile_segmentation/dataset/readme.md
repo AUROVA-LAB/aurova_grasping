@@ -2,7 +2,7 @@
 
 This dataset contains tactile images obtained with the vision-based tactile sensor known as Digit when grasping 16 different objects from YCB dataset (see first image), which contains different properties related to touch such as weight, friction, deformation, shape, height, width, etc. This dataset can be used to train and evaluate segmentation neural networks applied to tactile sensing. 
 
-![This is a alt text.](/image/image.png "This is a sample image.")
+![This is a alt text.](/../figures/tactile_segmentation_dataset.png "This is a sample image.")
 
 
 The total number of images is 3675 and there are approximately 200-250 images per object, as can be seen in the next table.
