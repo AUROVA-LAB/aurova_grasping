@@ -54,8 +54,7 @@ Please, if you use this dataset or part of it, cite the following publication:
 
     @unpublished{tactiledataset,
     author = {J. Castaño-Amorós, and P. Gil},
-    title = { Measuring Object Rotation via Visuo-Tactile Segmentation of Grasping
-Region },
+    title = { Measuring Object Rotation via Visuo-Tactile Segmentation of Grasping Region },
     note = {Submitted to IEE Robotics and Automation Letters},
     year = {N.D.},
 }
