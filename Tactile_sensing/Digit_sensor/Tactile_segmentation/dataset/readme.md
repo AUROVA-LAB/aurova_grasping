@@ -47,3 +47,17 @@ The dataset is structured in 16 folders, one per object. In the paper you can fi
             SegmentationClassVisualization/
                 labelidx_sensorunit.png --> visualization of the masks in the original images.
                 
+
+# RELATED PUBLICATIONS (CITATION)
+Please, if you use this dataset or part of it, cite the following publication:
+
+
+  @unpublished{tactiledataset,
+    author = {J. Castaño-Amorós, and P. Gil},
+    title = { Measuring Object Rotation via Visuo-Tactile Segmentation of Grasping
+Region },
+    note = {Submitted to IEE Robotics and Automation Letters},
+    year = {N.D.},
+  }
+  
+This research was funded by the Valencian Regional Government through the PROMETEO/2021/075 project and by the University of Alicante through the grant UAFPU21-26.
