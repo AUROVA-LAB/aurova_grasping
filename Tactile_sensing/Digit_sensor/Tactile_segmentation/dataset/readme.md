@@ -35,7 +35,6 @@ object/
 	image_label/
 		imageidx_sensorunit.png --> raw images from the Digit sensor.
 		labelidx_sensorunit.json --> labeled image in json format.
-	
 	voc_format/
 		class_names.txt --> We do not classify the images, but it is necessary to label all the masks with the same class. After that, we do not use this class for anything.
 		JPEGImages/ --> contain the same images as image_label but in jpg format.
