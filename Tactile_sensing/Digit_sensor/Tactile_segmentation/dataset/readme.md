@@ -32,7 +32,6 @@ This dataset is shared only for non-profit research or educational purposes. If 
 The dataset is structured in 16 folders, one per object. In the paper you can find which object is used for each subdataset for training, validation and testing. The object's folders are organized with the following structure:
 
     object/
-	
         image_label/
             imageidx_sensorunit.png --> raw images from the Digit sensor.
             labelidx_sensorunit.json --> labeled image in json format.
