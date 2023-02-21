@@ -32,10 +32,12 @@ This dataset is shared only for non-profit research or educational purposes. If 
 The dataset is structured in 16 folders, one per object. In the paper you can find which object is used for each set (D1, D2, and D3) for training, validation and testing. The object's folders are organized with the following structure:
 
 object/
-	image_label/
+	
+    image_label/
 		imageidx_sensorunit.png --> raw images from the Digit sensor.
 		labelidx_sensorunit.json --> labeled image in json format.
-	voc_format/
+	
+    voc_format/
 		class_names.txt --> We do not classify the images, but it is necessary to label all the masks with the same class. After that, we do not use this class for anything.
 		JPEGImages/ --> contain the same images as image_label but in jpg format.
 			imageidx_sensorunit.png
