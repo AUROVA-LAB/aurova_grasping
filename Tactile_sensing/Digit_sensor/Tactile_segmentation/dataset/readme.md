@@ -59,3 +59,9 @@ Please, if you use this dataset or part of it, cite the following publication:
     year = {N.D.}}
   
 This research was funded by the Valencian Regional Government through the PROMETEO/2021/075 project and by the University of Alicante through the grant UAFPU21-26.
+
+# DOWNLOAD
+To download this dataset fill in the [following form](https://docs.google.com/forms/d/1AZnPQH5c_kVyPTjyoVU5lHcbY7DrrAGGJUXw0olUApA/edit?pli=1)
+
+# VERSIONS
+V1 - Released in February 2023. 
