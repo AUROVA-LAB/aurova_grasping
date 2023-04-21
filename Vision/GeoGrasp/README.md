@@ -80,7 +80,7 @@ rosrun geograsp cloud_processor _topic:="/cloud_pcd"
 
 See below an example of the computed points for the example PCD files:
 
-<img src="/GeoGrasp/data/creeper-isolated.png" width="400"> <img src="/GeoGrasp/data/objects.png" width="445">
+<img src="/Vision/GeoGrasp/data/creeper-isolated.png" width="400"> <img src="/Vision/GeoGrasp/data/objects.png" width="445">
 
 # Applied changes
 1. PCL 1.8 changed some functions (comparing with PCL 1.7). Concretely the function pcl::geometry::distance().
