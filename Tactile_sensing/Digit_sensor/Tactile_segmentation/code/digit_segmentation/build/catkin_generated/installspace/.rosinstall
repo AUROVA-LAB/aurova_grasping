@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /digit_segmentation/digit_segmentation/install/setup.sh

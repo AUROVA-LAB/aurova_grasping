@@ -1,0 +1,2 @@
+digit_segmentation
+-DCATKIN_DEVEL_PREFIX=/digit_segmentation/digit_segmentation/devel -DCMAKE_INSTALL_PREFIX=/digit_segmentation/digit_segmentation/install -G Unix Makefiles

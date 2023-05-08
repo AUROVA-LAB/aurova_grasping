@@ -1,0 +1,8 @@
+prefix=/digit_segmentation/digit_segmentation/devel
+
+Name: digit_segmentation
+Description: Description of digit_segmentation
+Version: 0.0.0
+Cflags: -I/digit_segmentation/digit_segmentation/devel/include
+Libs: -L${prefix}/lib 
+Requires: message_runtime

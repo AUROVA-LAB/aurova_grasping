@@ -35,9 +35,9 @@ RUN pip install PyYAML && pip install rospkg && pip install empy && pip install 
 
 SHELL [ "/bin/bash" , "-c" ]
 
-RUN source /opt/ros/melodic/setup.bash && mkdir -p catkin_ws/src && cd catkin_ws \
- && catkin_make -DPYTHON_EXECUTABLE:FILEPATH=/opt/conda/bin/python3.7 && source devel/setup.bash \
- && echo "export ROS_MASTER_URI=http://192.168.100.6:11311/" >> /etc/bash.bashrc && cd src && \
- catkin_create_pkg tactile_segmentation std_msgs roscpp rospy && cd tactile_segmentation && mkdir scripts && cd ../.. && catkin_make -DPYTHON_EXECUTABLE:FILEPATH=/opt/conda/bin/python3.7 \
- && source devel/setup.bash
+#RUN source /opt/ros/melodic/setup.bash && mkdir -p catkin_ws/src && cd catkin_ws \
+# && catkin_make -DPYTHON_EXECUTABLE:FILEPATH=/opt/conda/bin/python3.7 && source devel/setup.bash \
+# && echo "export ROS_MASTER_URI=http://192.168.100.6:11311/" >> /etc/bash.bashrc && cd src && \
+# catkin_create_pkg tactile_segmentation std_msgs roscpp rospy && cd tactile_segmentation && mkdir scripts && cd ../.. && catkin_make -DPYTHON_EXECUTABLE:FILEPATH=/opt/conda/bin/python3.7 \
+# && source devel/setup.bash
  
