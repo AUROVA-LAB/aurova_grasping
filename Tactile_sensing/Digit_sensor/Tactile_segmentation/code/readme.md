@@ -46,4 +46,4 @@ python tactile_segmentation.py -r 1 -t 0
 python tactile_segmentation.py -r 0 -t 1
 ```
 
-The tactile_segmentation.py script will download the weights of PSPNet neural architecture and will wait until another script will publish a DIGIT image in /digit55/camera/image_color topic.  
+The tactile_segmentation.py script will download the weights of ResNet18 neural architecture and will wait until another script will publish a DIGIT image in /digit55/camera/image_color topic.  
