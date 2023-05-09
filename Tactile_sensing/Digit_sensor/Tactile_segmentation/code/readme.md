@@ -53,9 +53,9 @@ J. Castano-Amoros and P. Gil, "Rotational Slippage Prediction from Segmentation 
 
 Citation:
 
-@misc{castañoamoros2023rotational,
+@misc{castanoamoros2023rotational,
       title={Rotational Slippage Prediction from Segmentation of Tactile Images}, 
-      author={Julio Castaño-Amoros and Pablo Gil},
+      author={Julio Castano-Amoros and Pablo Gil},
       howpublished={\url{https://arxiv.org/abs/2305.04660}},
       year={2023},
 }
