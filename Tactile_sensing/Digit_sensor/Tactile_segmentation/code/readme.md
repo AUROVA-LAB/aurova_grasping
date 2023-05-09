@@ -19,7 +19,7 @@ docker run --net=host  --gpus "all" --rm -it --name docker_container_name --volu
 
 ```
 
-The docker container with the catkin workspace is already running. Now, run cd to inside the workspace folder, where you need to run these two commands:
+The docker container with the catkin workspace is already running. Now, run cd to inside the workspace folder, where you need to run these commands:
 
 ```sh 
 source /opt/ros/melodic/setup.bash
@@ -29,14 +29,12 @@ source /opt/ros/melodic/setup.bash
 source devel/setup.bash
 ```
 
-Now, you can run the tactile_segmentation.py script with -r 1 flag to apply angle estimation, or 
+Now, you can run roscore and the tactile_segmentation.py script with -r 1 flag to apply angle estimation, or 
 with -t 1 for centroid translation:
 
 ```sh 
 cd src/digit_segmentation/scripts/
 ```
-
-
 
 ```sh 
 python tactile_segmentation.py -r 1 -t 0
@@ -47,3 +45,17 @@ python tactile_segmentation.py -r 0 -t 1
 ```
 
 The tactile_segmentation.py script will download the weights of ResNet18 neural architecture and will wait until another script will publish a DIGIT image in /digit55/camera/image_color topic.  
+
+
+# Related publications
+
+J. Castano-Amoros and P. Gil, "Rotational Slippage Prediction from Segmentation of Tactile Images", in ViTac Workshop: Blending Virtual and Real Visuo-Tactile Perception (ICRA), London, UK, 2023, arxiv: https://arxiv.org/abs/2305.04660
+
+Citation:
+
+@misc{castañoamoros2023rotational,
+      title={Rotational Slippage Prediction from Segmentation of Tactile Images}, 
+      author={Julio Castaño-Amoros and Pablo Gil},
+      howpublished={\url{https://arxiv.org/abs/2305.04660}},
+      year={2023},
+}
