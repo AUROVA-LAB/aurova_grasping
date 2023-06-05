@@ -59,7 +59,7 @@ Please, if you use this dataset or part of it, cite the following publication:
     @unpublished{tactiledataset,
     author = {J. Castaño-Amorós, and P. Gil},
     title = { Measuring Object Rotation via Visuo-Tactile Segmentation of Grasping Region },
-    note = {Submitted to IEEE Robotics and Automation Letters},
+    note = {Accepted IEEE Robotics and Automation Letters},
     year = {N.D.}}
   
 This research was funded by the Valencian Regional Government through the PROMETEO/2021/075 project and by the University of Alicante through the grant UAFPU21-26.
