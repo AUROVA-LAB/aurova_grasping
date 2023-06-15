@@ -1,8 +1,0 @@
-prefix=/gripper/devel
-
-Name: robotiq_2f_gripper_action_server
-Description: Description of robotiq_2f_gripper_action_server
-Version: 1.0.0
-Cflags: -I/gripper/src/robotiq/robotiq_2f_gripper_action_server/include
-Libs: -L${prefix}/lib 
-Requires: actionlib actionlib_msgs robotiq_2f_gripper_control roscpp

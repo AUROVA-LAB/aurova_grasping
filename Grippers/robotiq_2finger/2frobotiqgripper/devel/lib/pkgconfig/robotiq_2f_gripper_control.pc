@@ -1,8 +1,0 @@
-prefix=/gripper/devel
-
-Name: robotiq_2f_gripper_control
-Description: Description of robotiq_2f_gripper_control
-Version: 1.0.0
-Cflags: -I/gripper/devel/include -I/gripper/src/robotiq/robotiq_2f_gripper_control/include
-Libs: -L${prefix}/lib 
-Requires: rospy message_runtime roscpp robotiq_ethercat

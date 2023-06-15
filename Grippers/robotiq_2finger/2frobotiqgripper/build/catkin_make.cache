@@ -1,2 +1,0 @@
-robotiq/robotiq:robotiq/robotiq_2f_140_gripper_visualization:robotiq/robotiq_2f_85_gripper_visualization:robotiq/robotiq_2f_c2_gripper_visualization:robotiq/robotiq_2f_gripper_action_server:robotiq/robotiq_2f_gripper_control:robotiq/robotiq_ethercat:robotiq/robotiq_ft_sensor:robotiq/robotiq_modbus_rtu:robotiq/robotiq_modbus_tcp
--DCATKIN_DEVEL_PREFIX=/gripper/devel -DCMAKE_INSTALL_PREFIX=/gripper/install -G Unix Makefiles

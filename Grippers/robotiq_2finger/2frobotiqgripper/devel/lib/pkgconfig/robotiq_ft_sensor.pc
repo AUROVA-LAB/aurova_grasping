@@ -1,8 +1,0 @@
-prefix=/gripper/devel
-
-Name: robotiq_ft_sensor
-Description: Description of robotiq_ft_sensor
-Version: 1.0.0
-Cflags: -I/gripper/devel/include
-Libs: -L${prefix}/lib 
-Requires: message_runtime std_msgs
