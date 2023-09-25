@@ -1,0 +1,42 @@
+JULIO CASTAÑO - AUROVA
+
+
+USO DE LA PINZA ROBOTIQ 2F-140
+
+El paquete de la pinza está preparado para ros kinetic y nuevas versiones. Hasta ros melodic he conseguido que funcione, pero no con ros noetic. Entonces, he creado una docker para poder utilizar la pinza en ubuntu 20.
+
+
+Voy a explicar los pasos para poder utilizarla sin errores.
+
+1 - Conseguir el paquete de ros para la pinza ROBOTIQ. Si bien puedes descargar el paquete desde el repositorio de github de ros industrial. Sin embargo, si lo haces, obtendrás errores al hacer el catkin_make con paquetes de la pinza de 3 dedos. Si solo pretendes utilizar la pinza de dos dedos puedes eliminar todos los paquetes 3f. Otra opción es coger el paquete que llevamos utilizando un tiempo y que ya hay otros programas hechos por mi e Ignacio para usar la pinza. Este paquete lo tendrá Julio y el objetivo es subirlo al drive del grupo.
+
+
+2 - Construir la imagen a partir del Dockerfile. Para hacer el Dockerfile me he basado en una imagen de ros melodic de ubuntu 18. El paquete mencionado anteriormente, que estará arosrun robotiq_2f_gripper_control Robotiq2FGripperSimpleController.py
+lojado en el drive del grupo, ya contiene en su interior el Dockerfile con los comandos. Entonces, solo hay que ejecutar cd /src/Dockerfile y después el comando "docker build -t image_name .". Con este comando construiremos lo necesario para ejecutar la pinza.
+
+3 - Ejecutar la imagen de docker creada en el paso 2. Se puede ejecutar con el siguiente comando:
+
+"docker run --net=host --device=/dev/ttyUSB0  --rm -it -v $(pwd):/gripper image_name"
+
+- Flag --net se utiliza para poder conectar el contenedor con otros paquetes de ros que estén en el pc local.
+
+- Flag --device nos va a permitir tener acceso al USB, USB0 en este caso, para tener los permisos suficientes para ejecutar los comandos de la pinza.
+
+- En el flag del volumen (-v) indicamos el path donde se encuentra el paquete de ros con la pinza.
+
+
+4 - Compilar el paquete dentro del docker container. Una vez hemos ejecutado la imagen, es importante que eliminemos las carpetas build y devel (rm -r build devel) y compilemos el workspace con catkin_make dentro del contenedor. 
+
+5 - Acceder al contenedor desde varias terminales para ejecutar los diferentes comandos de la pinza. Una vez el paquete está compilado, ya podemos ejecutar los diferentes comandos de la pinza. Sin embargo, como necesitamos varias terminales, tenemos que acceder al contenedor desde ellas. Para ello, ejecutamos el siguiente comando:
+
+"docker exec -it <container_id> bash"
+
+donde el container_id se obtiene ejecutando el comando docker container list y mirando el id del contenedor correspondiente. Ejecutaremos este comando en cada terminal desde la que queramos acceder al contenedor. Después haremos source devel/setup.bash dentro del workspace y ya podremos ejecutar diferentes comandos.
+
+6 - Comandos básicos:
+
+	*** Antes de ejecutar estos comandos, puede que haya que ejecutar el comando sudo chmod 777 /dev/ttyUSB0 para tener permisos***
+
+- Terminal 1: roscore
+- Terminal 2: rosrun robotiq_2f_gripper_control Robotiq2FGripperRtuNode.py /dev/ttyUSB0
+- Terminal 3: rosrun robotiq_2f_gripper_control Robotiq2FGripperSimpleController.py
