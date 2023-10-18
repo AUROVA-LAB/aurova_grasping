@@ -1,0 +1,1 @@
+In this folder, we save all the necessary CAD (stl) files to mount the Contactile sensors both on the 2F and 3F grippers. The designs were done by Killian Trebuchon from Sigma Clermont during his internship in AUROVA.
