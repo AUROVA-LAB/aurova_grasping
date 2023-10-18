@@ -49,9 +49,21 @@ The tactile_segmentation.py script will download the weights of ResNet18 neural 
 
 # Related publications
 
+J. Castaño-Amorós and P. Gil, "Measuring Object Rotation via Visuo-Tactile Segmentation of Grasping Region," in IEEE Robotics and Automation Letters, vol. 8, no. 8, pp. 4537-4544, Aug. 2023, doi: 10.1109/LRA.2023.3285471.
+
 J. Castano-Amoros and P. Gil, "Rotational Slippage Prediction from Segmentation of Tactile Images", in ViTac Workshop: Blending Virtual and Real Visuo-Tactile Perception (ICRA), London, UK, 2023, arxiv: https://arxiv.org/abs/2305.04660
 
 Citation:
+
+@ARTICLE{10149493,
+  author={Castaño-Amorós, Julio and Gil, Pablo},
+  journal={IEEE Robotics and Automation Letters}, 
+  title={Measuring Object Rotation via Visuo-Tactile Segmentation of Grasping Region}, 
+  year={2023},
+  volume={8},
+  number={8},
+  pages={4537-4544},
+  doi={10.1109/LRA.2023.3285471}}
 
 @misc{castanoamoros2023rotational,
       title={Rotational Slippage Prediction from Segmentation of Tactile Images}, 
