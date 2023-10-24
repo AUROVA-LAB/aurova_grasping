@@ -5,5 +5,4 @@ This ROS workspace can publish the raw RGB image from the sensor, but also the 3
 # Create conda env with python3.8
 ´´´sh
 conda create -n digit_depth python=3.8
-conda activate digit_depth
 ´´´
