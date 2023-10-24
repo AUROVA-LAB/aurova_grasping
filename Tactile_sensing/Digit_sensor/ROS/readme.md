@@ -11,3 +11,28 @@ conda create -n digit_depth python=3.8
 conda activate digit_depth
 ```
 
+# Install libraries from requirements.txt using pip inside of conda env
+```sh
+pip install -r requirements.txt
+```
+
+# Install rospkg and empy libraries with pip inside of conda env to run catkin_make without errors
+
+```sh
+pip install rospkg empy
+```
+
+# Now, you can compile the ROS workspace with catkin_make
+```sh
+cd digit_ros
+catkin_make
+source devel/setup.bash
+```
+
+# All right, it's time to run the digit_depth and digit launchs
+Digit node publishes the RGB tactile image. Digit_depth subscribes to Digit node to get the image and estimate the 3D.
+```sh
+roscore
+roslaunch digit_interface digit_depth.launch
+roslaunch digit_interface digit.launch 
+```
