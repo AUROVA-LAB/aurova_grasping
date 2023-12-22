@@ -1,1 +1,1 @@
-This repository contains all the code I implemented for the work on force estimation with DIGIT sensors.
+This repository contains all the code I implemented for the work on force estimation with DIGIT sensors. Data and weights can be found in the following link: https://drive.google.com/drive/folders/1DzQ0S-HkygKyZh2EoLKWBBqEzaJLGQfH?usp=drive_link
