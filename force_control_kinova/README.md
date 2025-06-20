@@ -1,6 +1,7 @@
 ## Touch-based Effector Control for 3D Surface Tracking
 
 This repository provides a tactile-based control method for robotic surface tracking using a Kinova Gen3 robotic arm and a PapillArray tactile sensor. The controller regulates both normal contact force and end-effector orientation, enabling the robot to adapt to unknown 3D surfaces for finishing tasks such as polishing and inspection, with special application in the footwear industry.
+Overview available at the link: [Touch-based_3d_surfaces](https://aurova-projects.github.io/Touch-based_3d_surfaces/)
 
 ## Docker is all you need
 
